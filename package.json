@@ -1,0 +1,23 @@
+{
+  "name": "spotify-json",
+  "version": "1.0.0",
+  "description": "Apply changes to a spotify json file",
+  "main": "src/index.js",
+  "scripts": {
+    "run": "node src/index.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/colemanmoore/spotify-json.git"
+  },
+  "author": "Coleman Moore",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/colemanmoore/spotify-json/issues"
+  },
+  "homepage": "https://github.com/colemanmoore/spotify-json#readme",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}
