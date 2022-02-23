@@ -4,7 +4,6 @@
   "description": "Apply changes to a spotify json file",
   "main": "src/index.js",
   "scripts": {
-    "run": "node src/index.js",
     "test": "jest"
   },
   "repository": {

@@ -29,6 +29,7 @@ test('It should add a new playlist to a user', () => {
     const user_id = spotify.users[0]
     const song_ids = spotify.songs
     const playlist_id = spotify.addNewPlaylist({ user_id, song_ids })
+    expect(typeof playlist_id).toEqual('string')
     expect(spotify.playlists.indexOf(playlist_id)).toBeGreaterThan(-1)
     expect(spotify.getPlaylist(playlist_id).song_ids).toEqual(song_ids)
 })
@@ -41,5 +42,6 @@ test('It should delete a playlist', () => {
 })
 
 test('It should output new json', () => {
-    
+    spotify.deletePlaylist(spotify.playlists[0].id)
+    expect(spotify.toJSON()).toEqual(input)
 })

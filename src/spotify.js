@@ -69,7 +69,11 @@ class Spotify {
             return
         }
 
-        const playlist = { id: this.playlists.length, user_id, song_ids: [] }
+        const playlist = { 
+            id: (this.playlists.length + 1).toString(),  // TODO ensure unique playlist id here
+            owner_id: user_id, 
+            song_ids: [] 
+        }
 
         for (let song of song_ids) {
             if (this.getSong(song)) {
@@ -93,6 +97,14 @@ class Spotify {
 
         delete this.playlistsById[id]
         this.playlists = this.playlists.filter(playlistId => playlistId !== id)
+    }
+
+    toJSON() {
+        return {
+            users: this.users.map(id => this.usersById[id]),
+            playlists: this.playlists.map(id => this.playlistsById[id]),
+            songs: this.songs.map(id => this.songsById[id])
+        }
     }
 }
 
