@@ -1,15 +1,18 @@
 # spotify-json
 Apply changes to a spotify json file
 
-## Set up
+## To Run
+```
+chmod u+x ./run.js
+./run.js
+```
 
-Install dependencies:
+## Set up for testing
 
-`npm install`
-
-Run tests:
-
-`npm test`
+```
+npm install
+npm test
+```
 
 Run application:
 

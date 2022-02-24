@@ -1,5 +1,7 @@
+#!/usr/bin/env node
+
 const fs = require('fs')
-const changes = require('./changes.js')
+const changes = require('./src/changes.js')
 
 let inputJSON
 const args = process.argv.slice(2)

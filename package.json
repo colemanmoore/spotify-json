@@ -2,7 +2,7 @@
   "name": "spotify-json",
   "version": "1.0.0",
   "description": "Apply changes to a spotify json file",
-  "main": "src/index.js",
+  "main": "run.js",
   "scripts": {
     "test": "jest"
   },
