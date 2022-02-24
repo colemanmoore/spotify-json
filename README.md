@@ -45,3 +45,7 @@ The output JSON is formatted with four spaces for new lines. It cannot replicate
 ## Scale considerations
 
 Reading the JSON inputs is currently done in a synchronous manner, so larger inputs might cause the whole process to take a very long time. Still, since we are only interested in the final output (not piecemeal updates), then there may be no reason to pursue an asynchronous approach.
+
+## Time
+
+I got a little carried away by doing this with TDD (maybe beyond scope of the prompt :)) and spent about three hours on this project.
